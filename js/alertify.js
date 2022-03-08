@@ -46,7 +46,15 @@ alertify.defaults = {
         cancel: "Cancel",
     },
     theme: { input: "ajs-input", ok: "ajs-ok", cancel: "ajs-cancel" },
-    hooks: { preinit: function (e) {}, postinit: function (e) {} },
+    hooks: {
+        preinit: function (e) {
+            const tmp = document.createElement("input");
+            document.body.appendChild(tmp);
+            tmp.focus();
+            document.body.removeChild(tmp);
+        },
+        postinit: function (e) {},
+    },
 };
 alertify.a ||
     alertify.dialog("a", function () {
