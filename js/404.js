@@ -64,3 +64,6 @@ function resetGame() {
     result.style.backgroundColor = "transparent";
     randomNumber = Math.floor(Math.random() * 100) + 1;
 }
+$('#guess').keypress((e) => {
+    if (e.which === 13) checkGuess();
+})
