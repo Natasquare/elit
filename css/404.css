@@ -26,7 +26,8 @@ body {
 h4 {
     letter-spacing: 1.2px;
 }
-a, span {
+a,
+span {
     color: var(--light);
     text-decoration: underline;
     text-decoration-color: var(--main);
@@ -34,7 +35,8 @@ a, span {
     text-underline-offset: 2px;
     transition: 0.4s;
 }
-a:hover, span:hover {
+a:hover,
+span:hover {
     color: var(--main);
 }
 .center {
@@ -50,7 +52,8 @@ a:hover, span:hover {
     padding: 7px;
     padding-left: 15px;
 }
-input, button {
+input,
+button {
     font-family: Poppins, sans-serif;
     background: 0 0;
     border-radius: 7px;
@@ -61,7 +64,9 @@ input, button {
     margin-left: 0;
     transition: 0.4s;
 }
-input:not([disabled]):hover, button:hover, input:not([disabled]):focus {
+input:not([disabled]):hover,
+button:hover,
+input:not([disabled]):focus {
     outline: none;
     box-shadow: 0;
     color: var(--main);
